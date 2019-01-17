@@ -1,15 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+//Rutas
+import { APP_ROUTING } from './app.routes';
+
+
+//Componentes
 import { AppComponent } from './app.component';
-import { HomeComponent } from './Components/home/home.component';
-import { NavbarComponent } from './Components/navbar/navbar.component';
-import {ContactoComponent} from './Components/contacto/contacto.component';
-import {FooterComponent} from './Components/footer/footer.component';
-import {M2o2Component} from './Components/m2o2/m2o2.component';
-import {ProyectosComponent} from './Components/proyectos/proyectos.component';
-import {SomosComponent} from './Components/somos/somos.component';
-import {TiendaComponent} from './Components/tienda/tienda.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import {ContactoComponent} from './components/contacto/contacto.component';
+import {FooterComponent} from './components/footer/footer.component';
+import {M2o2Component} from './components/m2o2/m2o2.component';
+import {ProyectosComponent} from './components/proyectos/proyectos.component';
+import {SomosComponent} from './components/somos/somos.component';
+import {TiendaComponent} from './components/tienda/tienda.component';
 
 
 @NgModule({
@@ -22,10 +27,11 @@ import {TiendaComponent} from './Components/tienda/tienda.component';
     M2o2Component,
     ProyectosComponent,
     SomosComponent,
-    TiendaComponent
+    TiendaComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING
   ],
   providers: [],
   bootstrap: [AppComponent]
